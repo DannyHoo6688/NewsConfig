@@ -1,4 +1,14 @@
-register:
-  testconfig:
-    property1: 1
-    property2: dfidjfdioj
+
+eureka:
+  server:
+    enable-self-preservation: false #是否开启自我保护，默认为 true,注册中心在丢失客户端时，会进入自动保护模式，注册中心并不会将该服务从注册中心删除掉。
+  instance:
+    preferIpAddress: true #是否以 IP 注册到注册中心,默认以 hostname 来注册
+    hostname: ${spring.cloud.client.ip-address}
+    #hostname: localhost
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    registerWithEureka: false #该应用为注册中心，设置为false, 代表不向注册中心注册自己。默认是true
+    fetchRegistry: false #注册中心的职责就是维护服务实例，它并不需要去检索服务，所以设置为false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
