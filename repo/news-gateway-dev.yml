@@ -1,5 +1,4 @@
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8700/eureka/
+project:
+  property:
+    property1: 这是news-gateway-dev的自定义测试参数

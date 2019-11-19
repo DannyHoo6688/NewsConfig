@@ -1,0 +1,15 @@
+
+
+#eureka
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}
+
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+common:
+  property:
+    property1: 这是news-gateway-dev的自定义测试参数

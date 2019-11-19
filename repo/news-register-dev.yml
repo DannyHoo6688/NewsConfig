@@ -5,10 +5,13 @@ eureka:
   instance:
     preferIpAddress: true #是否以 IP 注册到注册中心,默认以 hostname 来注册
     hostname: ${spring.cloud.client.ip-address}
-    #hostname: localhost
     instanceId: ${spring.cloud.client.ip-address}:${server.port}
   client:
     registerWithEureka: false #该应用为注册中心，设置为false, 代表不向注册中心注册自己。默认是true
     fetchRegistry: false #注册中心的职责就是维护服务实例，它并不需要去检索服务，所以设置为false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+project:
+  property:
+    property1: 这是news-register-dev的自定义测试参数
