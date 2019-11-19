@@ -12,4 +12,4 @@ eureka:
 
 common:
   property:
-    property1: 这是news-gateway-dev的自定义测试参数
+    property1: 这是common-dev的自定义测试参数
