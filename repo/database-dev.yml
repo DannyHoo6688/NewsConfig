@@ -26,7 +26,7 @@ spring:
           slow-sql-millis: 2000
       web-stat-filter:
         enable: true
-      stat-view-servlet:
+      stat-view-servlet:  #http://localhost:port/druid 访问druid控制台
         enabled: true
         #druid控制台的用户名和密码
         login-username: druid_admin
