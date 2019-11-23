@@ -1,7 +1,7 @@
 
 api:
   encrypt:
-    key: d7b85c6e414dbcda
+    key: d7b85c6e414dbcda #全局密钥配置，加密算法统一密钥
 
 rsa:
   publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcZlkHaSN0fw3CWGgzcuPeOKPdNKHdc2nR6KLXazhhzFhe78NqMrhsyNTf3651acS2lADK3CzASzH4T0bT+GnJ77joDOP+0SqubHKwAIv850lT0QxS+deuUHg2+uHYhdhIw5NCmZ0SkNalw8igP1yS+2TEIYan3lakPBvZISqRswIDAQAB
