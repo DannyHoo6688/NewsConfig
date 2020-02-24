@@ -5,3 +5,6 @@ spring:
       cluster-nodes: 140.143.158.164:9300
       repositories:
         enabled: true
+  elasticsearch:
+    rest:
+      uris: ["http://140.143.158.164:9200"]
