@@ -1,0 +1,13 @@
+rocketmq:
+  producer:
+    groupName: producerGroup # 生产者的组名
+    maxMessageSize: 100
+    sendMsgTimeout: 1000
+    retryTimesWhenSendFailed: 3
+  consumer:
+    groupName: consumerGroup # 消费者的组名
+    consumeThreadMin: 2
+    consumeThreadMax: 5
+    consumeMessageBatchMaxSize: 10
+    topics: rocketTopic,rocketTag
+  namesrvAddr: 140.143.204.89:9876 # NameServer地址
