@@ -4,7 +4,8 @@
 eureka:
   instance:
     hostname: ${spring.cloud.client.ip-address}
-    instanceId: ${spring.cloud.client.ip-address}:${server.port}
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}  #EurekaClient在Eureka上注册的url
+    preferIpAddress: true #访问路径可以显示IP地址
 
   client:
     serviceUrl:
