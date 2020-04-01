@@ -1,0 +1,1 @@
+git.sh -i /Users/dannyhoo/.ssh/id_rsa02 push origin master
