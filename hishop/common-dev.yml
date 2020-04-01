@@ -1,4 +1,5 @@
-
+custom:
+  dynamicPropertyTest: zdifjd
 
 #eureka
 eureka:
