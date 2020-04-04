@@ -12,3 +12,9 @@ eureka:
     serviceUrl:
       defaultZone: http://140.143.158.164:8100/eureka/
 
+spring:
+  zipkin:
+    base-url: http://140.143.158.164:8400
+  sleuth:
+    sampler:
+      probability: 1
