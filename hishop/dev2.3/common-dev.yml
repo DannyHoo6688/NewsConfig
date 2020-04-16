@@ -1,0 +1,20 @@
+custom:
+  dynamicPropertyTest: 修改变量值66666666666666
+
+#eureka
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}  #EurekaClient在Eureka上注册的url
+    preferIpAddress: true #访问路径可以显示IP地址
+
+  client:
+    serviceUrl:
+      defaultZone: http://140.143.158.164:8100/eureka/
+
+spring:
+  zipkin:
+    base-url: http://140.143.158.164:8400
+  sleuth:
+    sampler:
+      probability: 1

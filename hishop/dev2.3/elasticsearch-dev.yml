@@ -1,0 +1,11 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 140.143.158.164:9300
+      repositories:
+        enabled: true
+  #https://blog.csdn.net/CharlesYooSky/article/details/90405699
+  elasticsearch:
+    rest:
+      uris: ["http://140.143.158.164:9200"]
